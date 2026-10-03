@@ -331,3 +331,15 @@ For all Nexus App 2.0 surfaces and supporting project materials, use the dedicat
 - Do not expose or use the user's private email address in Nexus App 2.0 UI, Contact/Feedback, Google Sheets/Drive sharing, reports, tester instructions, GitHub documentation, or other project-facing materials.
 - New Google Sheets / Drive sharing related to Nexus App 2.0 should use the NXS project account wherever possible.
 - Existing Nexus App 2.0-related shares or references that still use the private address should be migrated when encountered.
+
+
+## Frozen Royal Castle asset
+
+The Kingdom Command hero artwork is frozen as `assets/royal-castle-frozen.svg`.
+
+- Same cinematic gold / navy visual level as the Nexus App 2.0 banner
+- Royal Castle centered as the primary focal point
+- Four distinct ballista defence installations
+- Ballistas point outward, away from the castle
+- No protection bubble
+- Do not alter, restyle, replace, recolor, reposition, or regenerate this artwork without explicit approval
