@@ -1,0 +1,12 @@
+{
+  "id": "/nexus-app-2/",
+  "name": "Nexus App 2.0",
+  "short_name": "Nexus 2.0",
+  "description": "Nexus App 2.0 · Kingdom #1885",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#06111c",
+  "theme_color": "#07131f",
+  "orientation": "any"
+}
