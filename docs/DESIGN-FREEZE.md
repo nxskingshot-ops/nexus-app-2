@@ -343,3 +343,13 @@ The Kingdom Command hero artwork is frozen as `assets/royal-castle-frozen.svg`.
 - Ballistas point outward, away from the castle
 - No protection bubble
 - Do not alter, restyle, replace, recolor, reposition, or regenerate this artwork without explicit approval
+
+
+## Temporary Project Freeze — 2026-10-03
+
+Nexus App 2.0 is temporarily frozen at the current repository state.
+
+- No code, layout, design, navigation, data-model, or asset changes.
+- Current approved Kingdom Command structure remains unchanged.
+- The frozen Royal Castle artwork remains the approved castle reference.
+- Work resumes only after an explicit instruction from the project owner (for example: "Go" / "Projekt weiter").
