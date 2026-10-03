@@ -73,7 +73,7 @@ button{font:inherit}
 .item-title{font-weight:700;font-size:13px}.item-sub{margin-top:2px;color:#93a9bc;font-size:11px}
 .readiness-ring{width:132px;height:132px;margin:4px auto 12px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--gold2) 0 82%,#173248 82%);position:relative}.readiness-ring::after{content:"";position:absolute;width:96px;height:96px;border-radius:50%;background:#0a1e2f;border:1px solid #274d69}.readiness-ring b{position:relative;z-index:2;font-family:Georgia,serif;font-size:28px;color:#ffe18a}.readiness-note{text-align:center;color:#9db0c1;font-size:12px}
 .tag{display:inline-block;padding:3px 7px;border-radius:6px;font-size:10px;border:1px solid #27536f;color:#acd4ef}.tag.gold{border-color:#886b2a;color:#f0d175}.tag.red{border-color:#87333e;color:#ff9298}
-.quick-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.quick button{border:1px solid #285471;border-radius:10px;background:linear-gradient(180deg,#0d2a40,#091b2b);color:#eaf5fd;padding:12px 8px;cursor:pointer}.quick button:hover{border-color:#d5a941}.quick span{display:block;font-size:20px;margin-bottom:5px}
+.quick-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.quick button,.quick-grid .quick-link{border:1px solid #285471;border-radius:10px;background:linear-gradient(180deg,#0d2a40,#091b2b);color:#eaf5fd;padding:12px 8px;cursor:pointer;text-decoration:none;text-align:center}.quick button:hover,.quick-grid .quick-link:hover{border-color:#d5a941}.quick span,.quick-grid .quick-link span{display:block;font-size:20px;margin-bottom:5px}
 .footer-note{margin-top:14px;color:#6f879b;font-size:11px;text-align:right}
 
 .overlay{position:fixed;inset:0;z-index:80;background:rgba(2,8,13,.72);backdrop-filter:blur(4px);display:none}.overlay.open{display:block}.drawer{position:absolute;right:0;top:0;width:min(92vw,380px);height:100%;padding:18px;background:linear-gradient(180deg,#081b2a,#06121c);border-left:1px solid rgba(222,176,61,.65);overflow:auto}.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.drawer h3{font-family:Georgia,serif;color:#f3d273}.drawer .close{background:none;border:1px solid #765d2b;color:#f2d271;border-radius:8px;width:40px;height:40px}
@@ -185,7 +185,7 @@ button{font:inherit}
         <div class="card-header"><span>✦</span><h3>Quick Access</h3></div>
         <div class="card-body quick-grid">
           <button><span>⚔</span>KvK Command</button>
-          <button onclick="window.location.href='kingdom-command.html'"><span>♛</span>Kingdom Command</button>
+          <a class="quick-link" href="kingdom-command.html"><span>♛</span>Kingdom Command</a>
           <button><span>👥</span>Alliance Intelligence</button>
           <button><span>⌖</span>Outpost Map</button>
           <button><span>◉</span>Transfer Scouting</button>
@@ -204,7 +204,7 @@ button{font:inherit}
     <div class="drawer-top"><h3>Nexus App 2.0</h3><button class="close" id="closeBtn">✕</button></div>
     <div class="nav">
       <button class="active"><span class="ico">⌂</span><span>Command Center</span></button>
-      <button><span class="ico">♛</span><span>Kingdom Command</span></button>
+      <a class="nav-link" href="kingdom-command.html"><span class="ico">♛</span><span>Kingdom Command</span></a>
       <button><span class="ico">⚔</span><span>KvK Command</span></button>
       <button><span class="ico">▥</span><span>True Power</span></button>
       <button><span class="ico">👥</span><span>Alliance Intelligence</span></button>
