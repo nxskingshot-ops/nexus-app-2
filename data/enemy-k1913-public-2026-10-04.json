@@ -1,0 +1,238 @@
+{
+  "snapshot_date": "2026-10-04",
+  "opponent_kingdom": 1913,
+  "status": "public-intelligence",
+  "source": {
+    "name": "StratForge",
+    "url": "https://stratforge.tools/ko/k/1913",
+    "note": "Publicly visible snapshot; values may change as StratForge updates."
+  },
+  "kingdom": {
+    "classification": "B",
+    "stratforge_score": 53,
+    "real_combat_power_m": 696.9,
+    "group_rank": 156,
+    "group_size": 664,
+    "top10_total_power_b": 1.7,
+    "transfer_group": "K1767+",
+    "conquest_count": 0,
+    "conquered_times": 0,
+    "throne_status": "vacant"
+  },
+  "kvk_history": [
+    {
+      "kvk": 1,
+      "opponent": 1934,
+      "month": "2026-07",
+      "prep": "L",
+      "battle": "W",
+      "result": "Successful defense"
+    }
+  ],
+  "top_alliances": [
+    {
+      "rank": 1,
+      "tag": "LwT",
+      "name": "Lowertz",
+      "leader": "HoRRoR Am LeGenD",
+      "total_power_b": 7.8,
+      "real_power_b": 4.8,
+      "members": 100,
+      "capacity": 100,
+      "champions": 2,
+      "cities": 99,
+      "forts": 15
+    },
+    {
+      "rank": 2,
+      "tag": "CMR",
+      "name": "Chimera",
+      "leader": "Seeloc",
+      "total_power_b": 5.7,
+      "real_power_b": 4.5,
+      "members": 91,
+      "capacity": 100,
+      "champions": 2,
+      "cities": 90,
+      "forts": 10
+    },
+    {
+      "rank": 3,
+      "tag": "YwN",
+      "name": "ParaísoDivino",
+      "leader": "Țħė CäkeMān",
+      "total_power_b": 5.3,
+      "real_power_b": 4.3,
+      "members": 96,
+      "capacity": 100,
+      "champions": 2,
+      "cities": 97,
+      "forts": 14
+    },
+    {
+      "rank": 4,
+      "tag": "TTN",
+      "name": "TITANS",
+      "leader": "El unico",
+      "total_power_b": 3.9,
+      "real_power_b": 3.5,
+      "members": 100,
+      "capacity": 100,
+      "champions": 1,
+      "cities": 86,
+      "forts": 9
+    },
+    {
+      "rank": 5,
+      "tag": "cmr",
+      "name": "ChimeraAcademy",
+      "leader": "SatanOfTheSouth2",
+      "total_power_b": 2.5,
+      "real_power_b": 2.4,
+      "members": 76,
+      "capacity": 100,
+      "champions": 2,
+      "cities": null,
+      "forts": null
+    }
+  ],
+  "top_players": [
+    {
+      "rank": 1,
+      "name": "Greyjoy",
+      "tag": "LwT",
+      "real_power_m": 102.4
+    },
+    {
+      "rank": 2,
+      "name": "Achilles",
+      "tag": "LwT",
+      "real_power_m": 90.1
+    },
+    {
+      "rank": 3,
+      "name": "Satoru ChuChu",
+      "tag": "LwT",
+      "real_power_m": 84.8
+    },
+    {
+      "rank": 4,
+      "name": "Apples",
+      "tag": "LwT",
+      "real_power_m": 75.5
+    },
+    {
+      "rank": 5,
+      "name": "Pacifier",
+      "tag": "007",
+      "real_power_m": 72.8
+    }
+  ],
+  "champions": {
+    "personal_power": {
+      "name": "Greyjoy",
+      "value_m": 234.1
+    },
+    "kill_count": {
+      "name": "Greyjoy",
+      "value": 34200487
+    },
+    "mystic_trial": {
+      "name": "Greyjoy",
+      "floor": 1661
+    }
+  },
+  "player_origins": {
+    "registered_players": 1096,
+    "population_top": [
+      {
+        "country": "United States",
+        "percent": 19
+      },
+      {
+        "country": "Indonesia",
+        "percent": 8
+      },
+      {
+        "country": "Mexico",
+        "percent": 6
+      },
+      {
+        "country": "Brazil",
+        "percent": 6
+      },
+      {
+        "country": "Korea",
+        "percent": 6
+      }
+    ],
+    "leaderboard_sample": 94,
+    "leaderboard_top": [
+      {
+        "country": "United States",
+        "percent": 26
+      },
+      {
+        "country": "Korea",
+        "percent": 16
+      },
+      {
+        "country": "Indonesia",
+        "percent": 9
+      },
+      {
+        "country": "Canada",
+        "percent": 5
+      },
+      {
+        "country": "United Kingdom",
+        "percent": 5
+      }
+    ]
+  },
+  "territory": {
+    "updated_hours_ago": 6,
+    "player_cities": 1817,
+    "alliances": 634,
+    "leading_holders": [
+      {
+        "tag": "007",
+        "name": "FAMILY",
+        "cities": 100
+      },
+      {
+        "tag": "LwT",
+        "name": "Lowertz",
+        "cities": 99
+      },
+      {
+        "tag": "YwN",
+        "name": "ParaísoDivino",
+        "cities": 97
+      },
+      {
+        "tag": "CMR",
+        "name": "Chimera",
+        "cities": 90
+      },
+      {
+        "tag": "TTN",
+        "name": "TITANS",
+        "cities": 86
+      },
+      {
+        "tag": "oo7",
+        "name": "FamilyAcademy",
+        "cities": 80
+      }
+    ]
+  },
+  "data_gaps": [
+    "Full top-player list beyond public top 5",
+    "TG castle distribution",
+    "Governor gear / charm / hero / pet breakdown",
+    "Current alliance rosters and rally-lead depth",
+    "Full KvK history if older cycles are missing from public source",
+    "Current map/outpost positions"
+  ]
+}
