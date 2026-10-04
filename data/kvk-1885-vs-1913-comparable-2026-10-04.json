@@ -1,0 +1,247 @@
+{
+  "snapshot_date": "2026-10-04",
+  "source": {
+    "name": "StratForge",
+    "kingdom_1885": "https://stratforge.tools/k/1885",
+    "kingdom_1913": "https://stratforge.tools/k/1913"
+  },
+  "note": "Comparison uses only like-for-like metrics from the same public source.",
+  "kingdoms": {
+    "1885": {
+      "king": "An Mórrígan [NXS]",
+      "grade": "C",
+      "score": 45,
+      "real_power_m": 810.4,
+      "group_rank": 147,
+      "group_size": 767,
+      "top10_total_power_b": 2.2,
+      "transfer_group": "K1767+",
+      "kvk_record": {
+        "wins": 3,
+        "losses": 3,
+        "win_rate_pct": 50
+      },
+      "top_alliances": [
+        {
+          "rank": 1,
+          "tag": "OoO",
+          "name": "OutofOrder",
+          "power_b": 9.5,
+          "real_power_b": 6.3,
+          "members": 99,
+          "cities": 94,
+          "forts": 14
+        },
+        {
+          "rank": 2,
+          "tag": "NXS",
+          "name": "NEXUS",
+          "power_b": 11.4,
+          "real_power_b": 5.4,
+          "members": 100,
+          "cities": 88,
+          "forts": 16
+        },
+        {
+          "rank": 3,
+          "tag": "FRA",
+          "name": "FRA",
+          "power_b": 7.3,
+          "real_power_b": 5.2,
+          "members": 98,
+          "cities": 78,
+          "forts": 9
+        },
+        {
+          "rank": 4,
+          "tag": "MYM",
+          "name": "Mythic",
+          "power_b": 8.7,
+          "real_power_b": 4.9,
+          "members": 100,
+          "cities": 85,
+          "forts": 15
+        },
+        {
+          "rank": 5,
+          "tag": "NxS",
+          "name": "NEXUSAcademy",
+          "power_b": 4.1,
+          "real_power_b": 3.6,
+          "members": 90,
+          "cities": 92,
+          "forts": 8
+        }
+      ],
+      "real_power_leaders": [
+        {
+          "rank": 1,
+          "name": "Indy Tao",
+          "tag": "OoO",
+          "real_power_m": 114.5
+        },
+        {
+          "rank": 2,
+          "name": "Lothlorien",
+          "tag": "MYM",
+          "real_power_m": 99.5
+        },
+        {
+          "rank": 3,
+          "name": "Luciano",
+          "tag": "NxS",
+          "real_power_m": 95.2
+        },
+        {
+          "rank": 4,
+          "name": "MrMoe",
+          "tag": "NXS",
+          "real_power_m": 94.4
+        },
+        {
+          "rank": 5,
+          "name": "A_S_S_A_U_L_T",
+          "tag": "NXS",
+          "real_power_m": 90.7
+        }
+      ],
+      "champions": {
+        "personal_power": {
+          "name": "Indy Tao",
+          "value_m": 333.8
+        },
+        "kills": {
+          "name": "Merlin Murphy",
+          "value": 97804315
+        },
+        "mystic": {
+          "name": "Indy Tao",
+          "floor": 1815
+        }
+      },
+      "territory": {
+        "cities": 1571,
+        "alliances": 422,
+        "updated": "2h ago"
+      }
+    },
+    "1913": {
+      "king": "Ashybeeee [007]",
+      "grade": "B",
+      "score": 57,
+      "real_power_m": 925.6,
+      "group_rank": 42,
+      "group_size": 767,
+      "top10_total_power_b": 2.5,
+      "transfer_group": "K1767+",
+      "kvk_record": {
+        "wins": 2,
+        "losses": 1,
+        "win_rate_pct": 67
+      },
+      "top_alliances": [
+        {
+          "rank": 1,
+          "tag": "007",
+          "name": "Family",
+          "power_b": 8.2,
+          "real_power_b": 5.5,
+          "members": 98,
+          "cities": 91,
+          "forts": 11
+        },
+        {
+          "rank": 2,
+          "tag": "CMR",
+          "name": "Chimera",
+          "power_b": 7.1,
+          "real_power_b": 5,
+          "members": 89,
+          "cities": 90,
+          "forts": 8
+        },
+        {
+          "rank": 3,
+          "tag": "LwT",
+          "name": "Lowertz",
+          "power_b": 10.1,
+          "real_power_b": 4.9,
+          "members": 92,
+          "cities": 100,
+          "forts": 12
+        },
+        {
+          "rank": 4,
+          "tag": "TTN",
+          "name": "TITANS",
+          "power_b": 5,
+          "real_power_b": 4.1,
+          "members": 94,
+          "cities": 86,
+          "forts": 7
+        },
+        {
+          "rank": 5,
+          "tag": "YcP",
+          "name": "WinnersAcademy",
+          "power_b": 6.6,
+          "real_power_b": 4,
+          "members": 95,
+          "cities": 93,
+          "forts": 12
+        }
+      ],
+      "real_power_leaders": [
+        {
+          "rank": 1,
+          "name": "goo 대박",
+          "tag": "YCP",
+          "real_power_m": 116.6
+        },
+        {
+          "rank": 2,
+          "name": "Greyjoy",
+          "tag": "LwT",
+          "real_power_m": 110.8
+        },
+        {
+          "rank": 3,
+          "name": "Achilles",
+          "tag": "LwT",
+          "real_power_m": 109
+        },
+        {
+          "rank": 4,
+          "name": "Psychostick0",
+          "tag": "CMR",
+          "real_power_m": 100.6
+        },
+        {
+          "rank": 5,
+          "name": "Kilex 303",
+          "tag": "TCN",
+          "real_power_m": 100
+        }
+      ],
+      "champions": {
+        "personal_power": {
+          "name": "goo 대박",
+          "value_m": 312.6
+        },
+        "kills": {
+          "name": "Achilles",
+          "value": 44175818
+        },
+        "mystic": {
+          "name": "Greyjoy",
+          "floor": 1794
+        }
+      },
+      "territory": {
+        "cities": 1776,
+        "alliances": 616,
+        "updated": "18d ago"
+      }
+    }
+  }
+}
