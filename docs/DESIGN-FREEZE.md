@@ -353,3 +353,14 @@ Nexus App 2.0 is temporarily frozen at the current repository state.
 - Current approved Kingdom Command structure remains unchanged.
 - The frozen Royal Castle artwork remains the approved castle reference.
 - Work resumes only after an explicit instruction from the project owner (for example: "Go" / "Projekt weiter").
+
+
+## Scoped Resume — 2026-10-04 · KvK #1913
+
+The temporary project freeze is lifted only for the explicitly approved KvK #1913 intelligence update.
+
+- Added verified public-source snapshot data for Kingdom #1913.
+- Added KvK Command / Enemy Intelligence view.
+- Linked KvK Command from the existing Command Center navigation.
+- No unrelated design, layout, navigation, or feature changes are authorized by this scope.
+- Existing frozen Royal Castle artwork and approved visual system remain unchanged.
