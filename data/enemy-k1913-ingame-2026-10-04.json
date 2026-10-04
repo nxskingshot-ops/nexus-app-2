@@ -1,0 +1,515 @@
+{
+  "snapshot_date": "2026-10-04",
+  "opponent_kingdom": 1913,
+  "verification": "verified_ingame_screenshots",
+  "source_note": "Values transcribed from current in-game ranking screenshots supplied on 04.10.2026. No public Real Power metric is used in this snapshot.",
+  "alliance_power": [
+    {
+      "rank": 1,
+      "tag": "YCP",
+      "name": "Winners",
+      "power": 10570618398
+    },
+    {
+      "rank": 2,
+      "tag": "LwT",
+      "name": "Lowertz",
+      "power": 10472025472
+    },
+    {
+      "rank": 3,
+      "tag": "007",
+      "name": "Family",
+      "power": 8158856819
+    },
+    {
+      "rank": 4,
+      "tag": "CMR",
+      "name": "Chimera",
+      "power": 7272410268
+    },
+    {
+      "rank": 5,
+      "tag": "TTN",
+      "name": "TITANS",
+      "power": 5275518705
+    },
+    {
+      "rank": 6,
+      "tag": "oo7",
+      "name": "FamilyAcademy",
+      "power": 3167348538
+    },
+    {
+      "rank": 7,
+      "tag": "YcP",
+      "name": "WinnersAcademy",
+      "power": 2137928987
+    },
+    {
+      "rank": 8,
+      "tag": "ywn",
+      "name": "Akademiindo",
+      "power": 1549313160
+    },
+    {
+      "rank": 9,
+      "tag": "EID",
+      "name": "Eidos",
+      "power": 1543636451
+    },
+    {
+      "rank": 10,
+      "tag": "FRM",
+      "name": "FarmerzUnited",
+      "power": 1355221533
+    },
+    {
+      "rank": 11,
+      "tag": "TCN",
+      "name": "TRIPLECHINNIGANS",
+      "power": 1335004189
+    },
+    {
+      "rank": 12,
+      "tag": "KhV",
+      "name": "Libres",
+      "power": 795364185
+    },
+    {
+      "rank": 13,
+      "tag": "FTS",
+      "name": "FnckTheSystem",
+      "power": 562406851
+    },
+    {
+      "rank": 14,
+      "tag": "STR",
+      "name": "StrawHats",
+      "power": 402256032
+    },
+    {
+      "rank": 15,
+      "tag": "ONP",
+      "name": "OnePiece",
+      "power": 346222155
+    },
+    {
+      "rank": 16,
+      "tag": "htG",
+      "name": "GreatWarriors",
+      "power": 322354033
+    },
+    {
+      "rank": 17,
+      "tag": "WAR",
+      "name": "heroes",
+      "power": 307093161
+    },
+    {
+      "rank": 18,
+      "tag": "MOH",
+      "name": "chnaiwi",
+      "power": 297656993
+    }
+  ],
+  "alliance_kills": [
+    {
+      "rank": 1,
+      "tag": "LwT",
+      "name": "Lowertz",
+      "kills": 587485399
+    },
+    {
+      "rank": 2,
+      "tag": "YCP",
+      "name": "Winners",
+      "kills": 433238788
+    },
+    {
+      "rank": 3,
+      "tag": "007",
+      "name": "Family",
+      "kills": 373321825
+    },
+    {
+      "rank": 4,
+      "tag": "CMR",
+      "name": "Chimera",
+      "kills": 242222835
+    },
+    {
+      "rank": 5,
+      "tag": "TTN",
+      "name": "TITANS",
+      "kills": 53696896
+    },
+    {
+      "rank": 6,
+      "tag": "TCN",
+      "name": "TRIPLECHINNIGANS",
+      "kills": 34578484
+    },
+    {
+      "rank": 7,
+      "tag": "oo7",
+      "name": "FamilyAcademy",
+      "kills": 14901707
+    },
+    {
+      "rank": 8,
+      "tag": "YcP",
+      "name": "WinnersAcademy",
+      "kills": 14110338
+    },
+    {
+      "rank": 9,
+      "tag": "FRM",
+      "name": "FarmerzUnited",
+      "kills": 11529883
+    }
+  ],
+  "personal_power_top10": [
+    {
+      "rank": 1,
+      "name": "goo 대박",
+      "tag": "YCP",
+      "power": 315796151
+    },
+    {
+      "rank": 2,
+      "name": "Dovik",
+      "tag": "LwT",
+      "power": 282028597
+    },
+    {
+      "rank": 3,
+      "name": "Achilles",
+      "tag": "LwT",
+      "power": 268555735
+    },
+    {
+      "rank": 4,
+      "name": "Greyjoy",
+      "tag": "LwT",
+      "power": 245499319
+    },
+    {
+      "rank": 5,
+      "name": "Inigo Montoya",
+      "tag": "007",
+      "power": 244887760
+    },
+    {
+      "rank": 6,
+      "name": "CoCo SNOW",
+      "tag": "LwT",
+      "power": 241213038
+    },
+    {
+      "rank": 7,
+      "name": "Applerari",
+      "tag": "LwT",
+      "power": 233472353
+    },
+    {
+      "rank": 8,
+      "name": "Ashybeeeee",
+      "tag": "007",
+      "power": 230035606
+    },
+    {
+      "rank": 9,
+      "name": "Psychostick0",
+      "tag": "CMR",
+      "power": 225536497
+    },
+    {
+      "rank": 10,
+      "name": "KIA BONGO³",
+      "tag": "LwT",
+      "power": 219134072
+    }
+  ],
+  "city_center_top40_distribution": {
+    "TG5": 15,
+    "TG4": 18,
+    "TG3": 7,
+    "top40_at_least_TG4": 33
+  },
+  "hero_power_top10": [
+    {
+      "rank": 1,
+      "name": "Greyjoy",
+      "tag": "LwT",
+      "hero": "Amadeus",
+      "power": 11947119
+    },
+    {
+      "rank": 2,
+      "name": "goo 대박",
+      "tag": "YCP",
+      "hero": "Amadeus",
+      "power": 10266562
+    },
+    {
+      "rank": 3,
+      "name": "Achilles",
+      "tag": "LwT",
+      "hero": "Eric",
+      "power": 9446654
+    },
+    {
+      "rank": 4,
+      "name": "Psychostick0",
+      "tag": "CMR",
+      "hero": "Amadeus",
+      "power": 7401719
+    },
+    {
+      "rank": 5,
+      "name": "Ashybeeeee",
+      "tag": "007",
+      "hero": "Amadeus",
+      "power": 5697554
+    },
+    {
+      "rank": 6,
+      "name": "Hokey",
+      "tag": "YCP",
+      "hero": "Zoe",
+      "power": 5636251
+    },
+    {
+      "rank": 7,
+      "name": "Mach",
+      "tag": "007",
+      "hero": "Amadeus",
+      "power": 5611495
+    },
+    {
+      "rank": 8,
+      "name": "Inigo Montoya",
+      "tag": "007",
+      "hero": "Amadeus",
+      "power": 5577802
+    },
+    {
+      "rank": 9,
+      "name": "Seeloc",
+      "tag": "LwT",
+      "hero": "Amadeus",
+      "power": 5217170
+    },
+    {
+      "rank": 10,
+      "name": "Roee",
+      "tag": "CMR",
+      "hero": "Petra",
+      "power": 4626549
+    }
+  ],
+  "total_hero_power_top10": [
+    {
+      "rank": 1,
+      "name": "Greyjoy",
+      "tag": "LwT",
+      "power": 48536786
+    },
+    {
+      "rank": 2,
+      "name": "goo 대박",
+      "tag": "YCP",
+      "power": 45061651
+    },
+    {
+      "rank": 3,
+      "name": "Achilles",
+      "tag": "LwT",
+      "power": 43180480
+    },
+    {
+      "rank": 4,
+      "name": "Inigo Montoya",
+      "tag": "007",
+      "power": 36734595
+    },
+    {
+      "rank": 5,
+      "name": "Psychostick0",
+      "tag": "CMR",
+      "power": 35413928
+    },
+    {
+      "rank": 6,
+      "name": "Ashybeeeee",
+      "tag": "007",
+      "power": 32967438
+    },
+    {
+      "rank": 7,
+      "name": "Seeloc",
+      "tag": "LwT",
+      "power": 31837803
+    },
+    {
+      "rank": 8,
+      "name": "CoCo SNOW",
+      "tag": "LwT",
+      "power": 30887714
+    },
+    {
+      "rank": 9,
+      "name": "Mach",
+      "tag": "007",
+      "power": 29688028
+    },
+    {
+      "rank": 10,
+      "name": "Applerari",
+      "tag": "LwT",
+      "power": 28881197
+    }
+  ],
+  "mystic_trial_top10": [
+    {
+      "rank": 1,
+      "name": "Greyjoy",
+      "tag": "LwT",
+      "floor": 1794
+    },
+    {
+      "rank": 2,
+      "name": "Achilles",
+      "tag": "LwT",
+      "floor": 1706
+    },
+    {
+      "rank": 3,
+      "name": "goo 대박",
+      "tag": "YCP",
+      "floor": 1633
+    },
+    {
+      "rank": 4,
+      "name": "Psychostick0",
+      "tag": "CMR",
+      "floor": 1608
+    },
+    {
+      "rank": 5,
+      "name": "Inigo Montoya",
+      "tag": "007",
+      "floor": 1537
+    },
+    {
+      "rank": 6,
+      "name": "Seeloc",
+      "tag": "LwT",
+      "floor": 1531
+    },
+    {
+      "rank": 7,
+      "name": "Ashybeeeee",
+      "tag": "007",
+      "floor": 1479
+    },
+    {
+      "rank": 8,
+      "name": "Mach",
+      "tag": "007",
+      "floor": 1476
+    },
+    {
+      "rank": 9,
+      "name": "Roee",
+      "tag": "CMR",
+      "floor": 1423
+    },
+    {
+      "rank": 10,
+      "name": "CoCo SNOW",
+      "tag": "LwT",
+      "floor": 1421
+    }
+  ],
+  "companion_power_top10": [
+    {
+      "rank": 1,
+      "name": "Greyjoy",
+      "tag": "LwT",
+      "power": 12597840
+    },
+    {
+      "rank": 2,
+      "name": "Ashybeeeee",
+      "tag": "007",
+      "power": 10665600
+    },
+    {
+      "rank": 3,
+      "name": "Achilles",
+      "tag": "LwT",
+      "power": 9209400
+    },
+    {
+      "rank": 4,
+      "name": "CoCo SNOW",
+      "tag": "LwT",
+      "power": 9145080
+    },
+    {
+      "rank": 5,
+      "name": "Mach",
+      "tag": "007",
+      "power": 8740440
+    },
+    {
+      "rank": 6,
+      "name": "Psychostick0",
+      "tag": "CMR",
+      "power": 8497920
+    },
+    {
+      "rank": 7,
+      "name": "Big Brother KOR",
+      "tag": "LwT",
+      "power": 8437080
+    },
+    {
+      "rank": 8,
+      "name": "Inigo Montoya",
+      "tag": "007",
+      "power": 8257920
+    },
+    {
+      "rank": 9,
+      "name": "MKGA 한국을 위대하게",
+      "tag": "YCP",
+      "power": 7956000
+    },
+    {
+      "rank": 10,
+      "name": "Todimo",
+      "tag": "CMR",
+      "power": 7946760
+    }
+  ],
+  "coverage": {
+    "personal_power": "Top 40 captured; top 10 transcribed into structured snapshot",
+    "city_center": "Top 40 captured and summarized",
+    "hero_power": "Top 40 captured; top 10 transcribed",
+    "total_hero_power": "Top 40 captured; top 10 transcribed",
+    "mystic_trial": "Top 40 captured; top 10 transcribed",
+    "companion_power": "Top 40 captured; top 10 transcribed",
+    "alliance_power": "Top 18 transcribed",
+    "alliance_kills": "Top 9 transcribed"
+  },
+  "intentionally_not_required": [
+    "Level-19-gated specialist rankings",
+    "Governor Gear specialist ranking",
+    "Charm specialist ranking",
+    "Research specialist ranking",
+    "Pet specialist ranking"
+  ]
+}
