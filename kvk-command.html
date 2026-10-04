@@ -7,74 +7,46 @@
 @media(max-width:430px){.wrap{padding-inline:8px}.hero h1{font-size:25px}.summary{gap:8px}.metric{padding:10px}.metric .pair{gap:5px}.own,.enemy{font-size:16px}}
 .intel-dashboard{border-color:rgba(217,169,59,.7)}.intel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}.intel-box{background:#081b2b;border:1px solid #214f70;border-radius:10px;padding:10px;min-width:0}.intel-box h3{margin:0 0 8px;color:#f4d178;font-size:13px}.duel{display:grid;grid-template-columns:1fr 26px 1fr;align-items:center;text-align:center;gap:4px}.duel div{display:flex;flex-direction:column;gap:2px}.duel small{font-size:8px;color:var(--muted)}.duel strong{font-size:18px;color:var(--own)}.duel div:last-child strong{color:var(--enemy)}.duel span{font-size:9px;color:var(--muted)}.duel i{font:900 12px Georgia,serif;color:var(--gold2)}.depthrow{display:grid;grid-template-columns:1fr auto auto;gap:7px;align-items:center;padding:5px 0;border-top:1px solid #173d57;font-size:10px}.depthrow:first-of-type{border-top:0}.depthrow b{color:var(--own)}.depthrow em{color:var(--enemy);font-style:normal;font-weight:800}.watchrow{display:flex;justify-content:space-between;gap:6px;padding:4px 0;border-top:1px solid #173d57;font-size:10px}.watchrow:first-of-type{border-top:0}.watchrow span{color:var(--enemy);text-align:right}.intel-wide{display:grid;grid-template-columns:1.35fr 1fr;gap:8px;margin-top:8px}.signalgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}.signalgrid span,.intel-tags span{border:1px solid #214f70;border-radius:6px;background:#061725;padding:6px;text-align:center;font-size:9px}.intel-box p{margin:0;color:var(--muted);font-size:10px;line-height:1.4}.intel-tags{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:7px}.intel-details{margin-top:8px;border:1px solid #315f83;border-radius:9px;background:#071927}.intel-details summary{cursor:pointer;padding:9px 11px;color:#f4d178;font-weight:800}.detailbody{padding:0 11px 10px;color:var(--muted);font-size:10px;line-height:1.45}.detailbody p{margin:7px 0}
 @media(max-width:760px){.intel-grid{grid-template-columns:1fr 1fr}.intel-wide{grid-template-columns:1fr}.signalgrid{grid-template-columns:repeat(2,1fr)}.intel-box{padding:9px}.intel-box h3{margin-bottom:6px}.intel-tags{grid-template-columns:1fr 1fr}}
-</style></head><body>
+.h2h{background:linear-gradient(180deg,#0d2940,#071a29);border:1px solid #285a7b;border-radius:12px;padding:10px 12px;box-shadow:0 12px 28px #0005}.h2h-title{display:flex;justify-content:space-between;align-items:center;font-weight:900;font-size:16px;color:#f4d178}.h2h-title small{font-size:9px;color:var(--muted)}.h2h-grid{display:grid;grid-template-columns:1fr 42px 1fr;gap:8px;align-items:center;margin-top:8px}.king{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:1px 8px;border:1px solid #285a7b;border-radius:9px;padding:8px 10px;background:#081c2d}.king small{grid-column:1/-1;font-size:8px;color:var(--muted)}.king b{font-size:18px}.king strong{font-size:21px;text-align:right}.king span{grid-column:1/-1;font-size:9px;color:var(--muted)}.ownk strong{color:var(--own)}.enemyk{border-color:#65333c}.enemyk strong{color:var(--enemy)}.vs{text-align:center;font:900 17px Georgia,serif;color:var(--gold2)}.statusline{display:flex;gap:12px;justify-content:space-between;margin-top:7px;padding-top:6px;border-top:1px solid #1c435e;color:var(--muted);font-size:9px}.intel-dashboard{padding:9px;margin-top:8px}.intel-grid{margin-top:0}.command-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:7px}.command-strip>div{display:flex;flex-direction:column;gap:2px;padding:7px;border:1px solid #214f70;border-radius:8px;background:#071927}.command-strip small{font-size:8px;color:#f4d178;font-weight:900}.command-strip b{font-size:11px}.command-strip span{font-size:8px;color:var(--muted)}.matchup-bar{display:grid;grid-template-columns:auto 1fr;gap:9px;align-items:center;margin-top:7px;padding:7px 9px;border:1px solid #80682d;border-radius:8px;background:rgba(137,95,22,.12);font-size:9px}.matchup-bar b{color:#f4d178}.compact-tactical{padding:9px;margin-top:8px}.tactical-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.tactical-head h2{margin:0;font-size:16px}.battle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:7px}.battle-grid>div{padding:7px;text-align:center;border:1px solid #214f70;border-radius:8px;background:#071927}.battle-grid b{display:block;color:#f4d178;font-size:10px}.battle-grid span{font-size:8px;color:var(--muted)}.timing.compact{margin-top:7px;padding:8px;font-size:9px}.timing.compact b{display:inline;margin-right:6px}.foot{margin-top:9px}
+@media(max-width:760px){.h2h{padding:8px}.h2h-title{font-size:14px}.h2h-grid{grid-template-columns:1fr 28px 1fr;gap:5px}.king{padding:6px}.king b{font-size:15px}.king strong{font-size:17px}.statusline{gap:5px;font-size:8px}.intel-dashboard{padding:7px}.intel-grid{gap:6px}.intel-box{padding:7px}.intel-box h3{font-size:11px}.duel strong{font-size:16px}.depthrow,.watchrow{font-size:9px;padding:3px 0}.command-strip{grid-template-columns:1fr 1fr}.matchup-bar{grid-template-columns:1fr;gap:2px}.battle-grid{grid-template-columns:1fr 1fr}.compact-tactical{padding:7px}.intel-details summary{padding:7px 9px;font-size:10px}}</style></head><body>
 <header class="header"><div class="header-inner"><img class="crest" src="https://nxskingshot-ops.github.io/kingdom-1885/icon-192.png" alt="NXS"><div class="brand"><h1>NEXUS PHALANX</h1><p>many paths, many strengths, one force.</p></div><div class="kingdom-mark">1885</div><button class="menu-btn" onclick="location.href='index.html'" aria-label="Command Center">☰</button></div></header>
 <main class="wrap">
-<section class="hero"><div class="kicker">NEXUS PHALANX · KvK Comparison</div><h1>#1885 vs #1913</h1><p>Simple like-for-like public comparison · snapshot 04.10.2026</p></section>
-
-<div class="notice"><strong>Easy comparison:</strong> this page shows only familiar, directly comparable values. Deeper metrics such as Real Power will be explained separately.</div>
-
-<div class="labels"><div>OUR KINGDOM · #1885</div><div>OPPONENT · #1913</div></div>
-
-<section class="summary">
-<div class="metric"><span>Top-10 Total Power</span><div class="pair"><div class="own">2.2B</div><div class="enemy">2.5B</div></div></div>
-<div class="metric"><span>StratForge Score</span><div class="pair"><div class="own">45 / C</div><div class="enemy">57 / B</div></div></div>
-<div class="metric"><span>Group Rank</span><div class="pair"><div class="own">#147</div><div class="enemy">#42</div></div></div>
-<div class="metric"><span>KvK Win Rate</span><div class="pair"><div class="own">50%</div><div class="enemy">67%</div></div></div>
-<div class="metric"><span>Strongest Alliance</span><div class="pair"><div class="own">NXS 11.4B</div><div class="enemy">LwT 10.1B</div></div></div>
-<div class="metric"><span>Transfer Group</span><div class="pair"><div class="own">K1767+</div><div class="enemy">K1767+</div></div></div>
+<section class="h2h">
+ <div class="h2h-title"><span>⚔️ Kingdom Head-to-Head</span><small>Snapshot 04.10.2026</small></div>
+ <div class="h2h-grid"><div class="king ownk"><small>OUR KINGDOM</small><b>#1885</b><strong>38.1B</strong><span>4 main alliances</span></div><div class="vs">VS</div><div class="king enemyk"><small>OPPONENT</small><b>#1913</b><strong>33.5B</strong><span>5 main alliances</span></div></div>
+ <div class="statusline"><span>Data status · snapshot</span><span>Top-10: <b class="own">2.2B</b> / <b class="enemy">2.5B</b></span><span>KvK WR: <b class="own">50%</b> / <b class="enemy">67%</b></span></div>
 </section>
 
-<section class="card"><h2>Top Alliances · Total Power</h2>
-<div class="row"><div><div class="name">#1</div></div><div class="v own">NXS<br>11.4B</div><div class="v enemy">LwT<br>10.1B</div></div>
-<div class="row"><div><div class="name">#2</div></div><div class="v own">OoO<br>9.5B</div><div class="v enemy">007<br>8.2B</div></div>
-<div class="row"><div><div class="name">#3</div></div><div class="v own">MYM<br>8.7B</div><div class="v enemy">CMR<br>7.1B</div></div>
-<div class="row"><div><div class="name">#4</div></div><div class="v own">FRA<br>7.3B</div><div class="v enemy">YcP<br>6.6B</div></div>
-<div class="row"><div><div class="name">#5</div></div><div class="v own">NxS<br>4.1B</div><div class="v enemy">TTN<br>5.0B</div></div>
-</section>
-
-<section class="card"><h2>Kingdom Champions · Same Leaderboards</h2>
-<div class="row"><div><div class="name">Personal Power</div></div><div class="v own">Indy Tao<br>333.8M</div><div class="v enemy">goo 대박<br>312.6M</div></div>
-<div class="row"><div><div class="name">Kill Count</div></div><div class="v own">Merlin Murphy<br>97,804,315</div><div class="v enemy">Achilles<br>44,175,818</div></div>
-<div class="row"><div><div class="name">Mystic Trial</div></div><div class="v own">Indy Tao<br>1815</div><div class="v enemy">Greyjoy<br>1794</div></div>
-</section>
-
-<section class="card"><h2>Territory · Same Public Metric</h2>
-<div class="row"><div><div class="name">Player cities held</div><div class="sub">Territory snapshots have different source ages</div></div><div class="v own">1,571</div><div class="v enemy">1,776</div></div>
-<div class="row"><div><div class="name">Alliances represented</div></div><div class="v own">422</div><div class="v enemy">616</div></div>
-<div class="row"><div><div class="name">Snapshot age</div></div><div class="v own">2h</div><div class="v enemy">18d</div></div>
-</section>
-
-<section class="card tactical"><h2>Castle Tactical Command · Reviewed Concepts</h2>
-<div class="sub">Integrated from the two Castle Rally Timing proposals and adjusted to PHALANX decision-support standards. Exact live execution remains with experienced Castle commanders.</div>
-<div class="legend"><span class="light g">🟢 Supported</span><span class="light y">🟡 Commander judgement</span><span class="light r">🔴 No fixed rule</span></div>
-<div class="tgrid">
-<div class="titem"><h3>🟡 Greyjoy / Achilles · Priority Threat</h3><p>Flag when leading or holding. No automatic “strongest counter”; matchup depends on the live garrison, formation and available leads.</p></div>
-<div class="titem"><h3>🟢 NXS + MYM · Synchronized Push</h3><p>Calculate individual march times and coordinate the IMPACTS as closely together as can be executed reliably.</p></div>
-<div class="titem"><h3>🟢/🟡 MYM · Defensive Counter Option</h3><p>Prepare the option while NXS holds. If NXS still holds after the enemy attack: CANCEL. Exact launch and impact timing is a commander call.</p></div>
-<div class="titem"><h3>🟢 OoO · Primary Turret Control</h3><p>Primary turret responsibility provides clear roles while NXS/MYM focus on Castle. Keep the role flexible as the battle changes.</p></div>
-</div>
-<div class="timing"><b>⏱️ PHALANX Timing Principle</b><span>Seconds matter and impact times should be calculated precisely. The objective is the smallest reliably achievable gap between coordinated impacts — but there is no universal 2s / 3–5s / 5s / 15s rule. The battle caller sets the exact gap from actual march times and live conditions.</span></div>
-<div class="roles"><div class="role"><strong>🏰 NXS</strong>Castle pressure / hold</div><div class="role"><strong>🛡️ MYM</strong>Counter option</div><div class="role"><strong>🔥 OoO</strong>Turret control</div><div class="role"><strong>🔄 FRA</strong>Flexible reserve</div></div>
-<div class="notice"><strong>🔴 Do not standardize:</strong> mandatory 2s impact gaps, +3–5s counter gaps, fixed 5s turret attacks or fixed 15s turret landings. <strong>🟡 Speed adjustments:</strong> useful when callers need them, not an automatic “final 30 seconds” rule.</div>
-<div class="sub" style="margin-top:9px"><strong>PHALANX recommendation:</strong> Keep the structure. Calculate the seconds. Synchronize impacts as tightly as reliably possible. PHALANX provides intelligence; experienced commanders make the live calls.</div>
-</section>
-<section class="card intel-dashboard"><h2>PHALANX Intelligence Dashboard</h2>
-<div class="sub">Compact command view · #1885 vs #1913 · snapshot 04.10.2026</div>
+<section class="card intel-dashboard">
 <div class="intel-grid">
   <div class="intel-box whale"><h3>🐋 Mega-Whale</h3><div class="duel"><div><small>OUR #1</small><b>Indy Tao</b><strong>333.8M</strong><span>Mystic 1815</span></div><i>VS</i><div><small>ENEMY #1</small><b>goo 대박</b><strong>312.6M</strong><span>Mystic 1633</span></div></div></div>
-  <div class="intel-box depth"><h3>📊 Depth Comparison</h3><div class="depthrow"><span>Top-10 Power</span><b>2.2B</b><em>2.5B</em></div><div class="depthrow"><span>Strongest Alliance</span><b>NXS 11.4B</b><em>LwT 10.1B</em></div><div class="depthrow"><span>KvK Win Rate</span><b>50%</b><em>67%</em></div></div>
-  <div class="intel-box structure"><h3>🏰 Alliance Structure</h3><div class="depthrow"><span>#1</span><b>NXS 11.4B</b><em>LwT 10.1B</em></div><div class="depthrow"><span>#2</span><b>OoO 9.5B</b><em>007 8.2B</em></div><div class="depthrow"><span>#3</span><b>MYM 8.7B</b><em>CMR 7.1B</em></div><div class="depthrow"><span>#4</span><b>FRA 7.3B</b><em>YcP 6.6B</em></div></div>
-  <div class="intel-box watch"><h3>🎯 Players to Watch</h3><div class="watchrow"><b>1 · goo 대박</b><span>All-rounder</span></div><div class="watchrow"><b>2 · Dovik</b><span>Troop-heavy</span></div><div class="watchrow"><b>3 · Achilles</b><span>Balanced elite</span></div><div class="watchrow"><b>4 · Greyjoy</b><span>Permanent power</span></div><div class="watchrow"><b>5 · Psychostick0</b><span>Underrated threat</span></div></div>
+  <div class="intel-box depth"><h3>📊 Depth Comparison</h3><div class="depthrow"><span>Top-10</span><b>2.2B</b><em>2.5B</em></div><div class="depthrow"><span>#1 Alliance</span><b>11.4B</b><em>10.1B</em></div><div class="depthrow"><span>KvK WR</span><b>50%</b><em>67%</em></div></div>
+  <div class="intel-box structure"><h3>🏰 Alliance Structure</h3><div class="depthrow"><span>#1</span><b>NXS 11.4</b><em>LwT 10.1</em></div><div class="depthrow"><span>#2</span><b>OoO 9.5</b><em>007 8.2</em></div><div class="depthrow"><span>#3</span><b>MYM 8.7</b><em>CMR 7.1</em></div><div class="depthrow"><span>#4</span><b>FRA 7.3</b><em>YcP 6.6</em></div></div>
+  <div class="intel-box watch"><h3>🎯 Players to Watch</h3><div class="watchrow"><b>1 · goo 대박</b><span>All-rounder</span></div><div class="watchrow"><b>2 · Dovik</b><span>Troop-heavy</span></div><div class="watchrow"><b>3 · Achilles</b><span>Balanced</span></div><div class="watchrow"><b>4 · Greyjoy</b><span>Permanent</span></div><div class="watchrow"><b>5 · Psychostick0</b><span>Underrated</span></div></div>
 </div>
-<div class="intel-wide">
- <div class="intel-box"><h3>⚖️ True Power Head-to-Head · Intelligence Signals</h3><div class="signalgrid"><span>Personal Power</span><span>Troop Power</span><span>Governor Gear</span><span>Governor Charms</span><span>Hero w/o Equip</span><span>Hero Equip</span><span>Pet Power</span><span>Research</span><span>Mystic Trial</span><span>Town Center</span></div></div>
- <div class="intel-box"><h3>🧭 Matchup Read</h3><p>#1913 has the stronger public Top-10 headline; #1885 has the stronger #1 alliance in this snapshot. PHALANX priority: exploit coordinated alliance depth, flag elite threats live, and avoid reducing the matchup to whale-vs-whale power.</p><div class="intel-tags"><span>Greyjoy / Achilles · Castle priority</span><span>NXS + MYM · synchronized pressure</span><span>OoO · turret control</span><span>FRA · flexible reserve</span></div></div>
+
+<div class="command-strip">
+ <div><small>⚖️ TRUE POWER</small><b>10 signals tracked</b><span>Gear · Charms · Heroes · Pets · Research · Mystic +</span></div>
+ <div><small>🎯 CASTLE PRIORITY</small><b>Greyjoy / Achilles</b><span>Flag when leading or holding</span></div>
+ <div><small>⚔️ EXECUTION</small><b>NXS + MYM</b><span>Synchronized pressure</span></div>
+ <div><small>🔥 CONTROL</small><b>OoO · Turrets</b><span>FRA · flexible reserve</span></div>
 </div>
-<details class="intel-details"><summary>View deeper opponent intelligence & KvK history</summary><div class="detailbody"><p><b>Greyjoy:</b> strongest permanent-development profile. <b>Achilles:</b> highly balanced elite. <b>goo 대박:</b> strongest all-rounder. <b>Psychostick0:</b> development depth exceeds headline-power impression. <b>Dovik:</b> troop-heavy relative to permanent-development ranks.</p><p><b>#1913 history:</b> Prep losses vs #1934 and #1932 while holding Castle; Greyjoy and Achilles became King. Later beat #1918 in Prep 4.33B–4.15B but lost Castle. Prep strength and Castle execution remain separate signals.</p><p class="sub">Snapshot intelligence only. Power and rankings can change; validate live conditions before battle calls.</p></div></details>
+
+<div class="matchup-bar"><b>🧭 PHALANX READ</b><span>#1913 stronger Top-10 headline · #1885 stronger #1 alliance · leverage coordinated depth, not whale-vs-whale.</span></div>
+
+<details class="intel-details"><summary>Intelligence details · True Power · history</summary><div class="detailbody">
+<div class="signalgrid"><span>Personal</span><span>Troops</span><span>Gov Gear</span><span>Charms</span><span>Hero base</span><span>Hero Equip</span><span>Pets</span><span>Research</span><span>Mystic</span><span>Town Center</span></div>
+<p><b>Threat profiles:</b> Greyjoy — permanent-development benchmark · Achilles — balanced elite · goo 대박 — strongest all-rounder · Psychostick0 — underrated development depth · Dovik — troop-heavy profile.</p>
+<p><b>#1913 history:</b> Prep losses vs #1934 and #1932 while holding Castle; later beat #1918 in Prep 4.33B–4.15B but lost Castle. Prep strength and Castle execution are separate signals.</p>
+</div></details>
 </section>
 
-<section class="card"><h2>Not shown here yet</h2><div class="sub">Real Power / permanent strength · TG distribution · Governor Gear · Charms · Pets · Heroes · Research · Rally-lead depth · troop counts. These belong in a separate deeper analysis so the main comparison stays easy to read.</div></section>
+<section class="card tactical compact-tactical">
+<div class="tactical-head"><h2>🛡️ Battle Readiness · Castle Command</h2><span class="light g">Reviewed</span></div>
+<div class="battle-grid"><div><b>🟢 NXS</b><span>Castle pressure / hold</span></div><div><b>🟢/🟡 MYM</b><span>Counter option</span></div><div><b>🟢 OoO</b><span>Turret control</span></div><div><b>🟡 FRA</b><span>Flexible reserve</span></div></div>
+<div class="timing compact"><b>⏱ Timing principle</b><span>Calculate actual march times; synchronize impacts as tightly as reliably possible. No universal 2s / 3–5s / 5s / 15s rule.</span></div>
+<details class="intel-details"><summary>Castle execution notes</summary><div class="detailbody"><p><b>Greyjoy / Achilles:</b> priority threat when leading/holding; no automatic strongest counter. <b>MYM:</b> prepare counter while NXS holds; cancel if NXS still holds after the enemy attack. Exact timing remains a commander call.</p><p><b>Do not standardize:</b> mandatory impact gaps, fixed turret attack/landing seconds or automatic final-30-second speed rules. PHALANX provides intelligence; experienced commanders make live calls.</p></div></details>
+</section>
 
-<div class="foot">Source: StratForge kingdom pages for #1885 and #1913. Public snapshots can refresh independently.</div>
+<div class="foot">PHALANX · #1885 vs #1913 · snapshot intelligence can change.</div>
 </main></body></html>
