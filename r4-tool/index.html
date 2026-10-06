@@ -259,7 +259,7 @@ defaults.forEach((txt,i)=>{
   cb.onchange=save; inp.oninput=save; row.append(cb,inp); host.appendChild(row);
 });
 if('serviceWorker' in navigator){
-  window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+  window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js?v=4').catch(()=>{}));
 }
 </script>
 </body>
