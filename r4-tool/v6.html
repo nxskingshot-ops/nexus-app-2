@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#06111b">
+<link rel="manifest" href="manifest.webmanifest?v=6">
+<title>R4 Quick Tool</title>
+<style>
+:root{
+  --bg:#06111b;--panel:#0a1b29;--panel2:#0b2233;--line:#2c5873;
+  --gold:#f0ce70;--gold2:#b98a2f;--text:#f6f5f2;--muted:#91a3b2;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:
+radial-gradient(circle at 80% 0%,rgba(37,86,118,.18),transparent 24%),
+linear-gradient(180deg,#07131e 0%,#06111b 56%,#040a10 100%);
+color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+body{padding-bottom:26px}
+.shell{max-width:780px;margin:0 auto;min-height:100vh}
+.hero{position:sticky;top:0;z-index:5;background:linear-gradient(180deg,rgba(6,16,26,.98),rgba(7,18,28,.97));border-bottom:1px solid #d0a63e;box-shadow:0 8px 24px rgba(0,0,0,.22);backdrop-filter:blur(12px)}
+.hero-inner{position:relative;min-height:144px;padding:18px 18px 16px 22px;display:grid;grid-template-columns:112px 1fr;align-items:center;gap:18px;overflow:hidden}
+.hero-copy{position:relative;z-index:2;min-width:0}
+.eyebrow{font-family:Georgia,'Times New Roman',serif;font-size:13px;letter-spacing:.17em;text-transform:uppercase;color:var(--gold);font-weight:800;white-space:nowrap}
+h1{font-family:Georgia,'Times New Roman',serif;margin:5px 0 0;font-size:42px;line-height:.95;color:#f8d978;letter-spacing:.01em;text-shadow:0 2px 0 #4e3b13,0 0 18px rgba(240,206,112,.08);white-space:nowrap}
+.motto{font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c7d0d8;margin-top:8px;font-style:italic;white-space:nowrap}
+.crest{position:relative;z-index:2;width:112px;height:112px;filter:drop-shadow(0 8px 14px rgba(0,0,0,.4))}
+.crest svg{width:100%;height:100%;display:block}
+.hero-art{position:absolute;right:0;top:0;width:42%;height:100%;opacity:.96;pointer-events:none}
+.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#07131e 0%,rgba(7,19,30,.3) 35%,transparent 70%)}
+.hero-art svg{width:100%;height:100%;display:block}
+.content{padding:20px 22px 12px}
+.command-card{border:1px solid #376783;border-radius:24px;background:linear-gradient(180deg,rgba(13,38,56,.98),rgba(7,23,35,.98));overflow:hidden;margin-bottom:20px;box-shadow:inset 0 1px rgba(255,255,255,.02),0 8px 20px rgba(0,0,0,.18)}
+.command-title{padding:21px 25px 16px;border-bottom:1px solid #1e4055;display:flex;align-items:center;justify-content:space-between}
+.command-title h2{margin:0;font-family:Georgia,'Times New Roman',serif;font-size:30px;color:#f6d777;line-height:1}
+.meta{font-size:14px;color:#99aab8}
+.stat-row{padding:17px 18px 18px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.stat{border:1px solid #8b7137;border-radius:18px;padding:14px 8px 13px;background:linear-gradient(180deg,#091927,#07131f);text-align:center;box-shadow:inset 0 1px rgba(255,255,255,.02)}
+.stat .sicon{display:block;font-size:25px;line-height:1;margin-bottom:8px;filter:sepia(1) saturate(1.4)}
+.stat b{display:block;font-family:Georgia,'Times New Roman',serif;font-size:23px;color:#f4d375;line-height:1.05}
+.stat span{display:block;margin-top:7px;font-size:13px;color:#a3b1bd}
+.section{margin-bottom:18px;border:1px solid #2e5870;border-radius:22px;background:linear-gradient(180deg,#081825,#071520);overflow:hidden;box-shadow:0 8px 18px rgba(0,0,0,.12)}
+.section summary{list-style:none;padding:19px 24px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:800;font-size:22px;min-height:88px}
+.section summary::-webkit-details-marker{display:none}
+.section summary .left{display:flex;align-items:center;gap:16px}
+.section summary .icon{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;font-size:31px;background:radial-gradient(circle at 35% 30%,#17364c,#081722 70%);border:2px solid #a88335;box-shadow:inset 0 0 0 2px rgba(255,218,112,.06),0 2px 8px rgba(0,0,0,.28)}
+.section summary:after{content:"＋";font-size:36px;line-height:1;color:#f1cd6e;font-weight:500}
+.section[open] summary:after{content:"−"}
+.section[open] summary{border-bottom:1px solid #1f4054}
+.section-body{padding:14px 16px 17px}
+.quick-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.block{background:#050f18;border:1px solid #203d50;border-radius:16px;padding:12px}
+.block-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}
+.block-head strong{font-size:13px}
+.tag{font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:#f1d78c;border:1px solid #705b26;border-radius:999px;padding:4px 7px;background:#171307}
+textarea{width:100%;min-height:90px;max-height:220px;resize:vertical;border:1px solid #1d3648;border-radius:11px;background:#02080e;color:#f2f5f7;padding:10px;font:12px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;outline:none}
+.copy{width:100%;margin-top:8px;border:1px solid var(--gold2);border-radius:11px;background:linear-gradient(180deg,#2d2616,#171208);color:#f7e5ad;font-weight:900;padding:11px}
+.todo{display:flex;align-items:center;gap:9px;margin:8px 0}
+.todo input[type=checkbox]{width:18px;height:18px;accent-color:#c7a24d}
+.todo input[type=text]{flex:1;background:#07111a;border:1px solid #1d3648;border-radius:9px;color:white;padding:8px 9px}
+.small-note{font-size:10px;color:#728798;margin-top:8px}
+.toast{position:fixed;z-index:20;left:50%;bottom:18px;transform:translateX(-50%) translateY(8px);opacity:0;transition:.18s;background:#0d2517;color:#dff3e5;border:1px solid #2f6440;border-radius:999px;padding:9px 14px;font-weight:800;font-size:12px}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.footer{text-align:center;color:#677b8c;font-size:14px;padding:16px 0 40px}
+@media(max-width:560px){
+  .hero-inner{min-height:126px;padding:14px 13px 13px 16px;grid-template-columns:84px 1fr;gap:13px}
+  .crest{width:84px;height:84px}
+  .hero-art{width:39%}
+  .eyebrow{font-size:10px;letter-spacing:.15em}
+  h1{font-size:31px}
+  .motto{font-size:12px;margin-top:6px}
+  .content{padding:16px 14px 8px}
+  .command-card{border-radius:19px;margin-bottom:14px}
+  .command-title{padding:16px 16px 13px}
+  .command-title h2{font-size:25px}
+  .meta{font-size:12px}
+  .stat-row{padding:13px;gap:9px}
+  .stat{border-radius:15px;padding:14px 6px}
+  .stat b{font-size:19px}
+  .stat span{font-size:11px}
+  .section{border-radius:18px;margin-bottom:13px}
+  .section summary{padding:14px 17px;min-height:76px;font-size:20px}
+  .section summary .left{gap:13px}
+  .section summary .icon{width:47px;height:47px;border-radius:13px;font-size:26px}
+  .section summary:after{font-size:31px}
+  .footer{font-size:11px;padding-top:11px}
+}
+@media(max-width:390px){
+  .hero-inner{grid-template-columns:72px 1fr}
+  .crest{width:72px;height:72px}
+  h1{font-size:28px}
+  .motto{font-size:11px}
+  .eyebrow{font-size:9px}
+  .stat b{font-size:17px}
+  .section summary{font-size:18px}
+}
+@media(min-width:680px){.quick-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="crest" aria-label="NXS crest">
+        <svg viewBox="0 0 140 140" role="img">
+          <defs>
+            <linearGradient id="cg" x1="0" x2="1"><stop stop-color="#8e5a10"/><stop offset=".45" stop-color="#ffd976"/><stop offset="1" stop-color="#9a6413"/></linearGradient>
+            <linearGradient id="cs" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#1b2a36"/><stop offset="1" stop-color="#060b10"/></linearGradient>
+          </defs>
+          <path d="M70 7 115 23 109 95 70 128 31 95 25 23Z" fill="#0a121a" stroke="url(#cg)" stroke-width="5"/>
+          <path d="M29 30 10 25 24 42 6 45 26 56 9 65 31 68M111 30l19-5-14 17 18 3-20 11 17 9-22 3" fill="none" stroke="url(#cg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M70 22c-20 0-34 15-35 37l11 5 3 32 21 17 21-17 3-32 11-5c-1-22-15-37-35-37Z" fill="url(#cg)"/>
+          <path d="M70 27 58 41v52l12 10 12-10V41Z" fill="url(#cs)"/>
+          <path d="M48 48 35 42l8 23 15 6V52Zm44 0 13-6-8 23-15 6V52Z" fill="#05090d"/>
+          <path d="M70 11 61 28h18Z" fill="#ffd976"/>
+          <path d="M70 13v18" stroke="#f9d670" stroke-width="4" stroke-linecap="round"/>
+          <text x="70" y="122" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#f2cf69">NXS</text>
+        </svg>
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow">NXS · PERSONAL COMMAND</div>
+        <h1>R4 Quick Tool</h1>
+        <div class="motto">many paths, many strengths, one force.</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 280 140" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18394e"/><stop offset=".6" stop-color="#0c2435"/><stop offset="1" stop-color="#4f3316"/></linearGradient>
+            <linearGradient id="sun" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#ffdc75"/><stop offset="1" stop-color="#d5862d"/></linearGradient>
+          </defs>
+          <rect width="280" height="140" fill="url(#sky)"/>
+          <circle cx="245" cy="35" r="34" fill="url(#sun)" opacity=".7"/>
+          <path d="M0 115 32 88 55 101 83 68 108 104 134 79 155 111 178 93 205 112 232 84 280 117V140H0Z" fill="#08131d" opacity=".92"/>
+          <path d="M186 32h48v87h-48zM177 48h66v12h-66zM192 20h10v20h-10zM219 20h10v20h-10z" fill="#071019"/>
+          <path d="M193 44h34v55h-34z" fill="#0b1b28" stroke="#8f6b2b" stroke-width="2"/>
+          <path d="m210 51 14 11-5 27-9 8-9-8-5-27Z" fill="#101820" stroke="#d3a949" stroke-width="2"/>
+          <path d="M210 55v26m-8-18 8 7 8-7" fill="none" stroke="#f0c65a" stroke-width="2"/>
+          <text x="210" y="93" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#f0c65a">NXS</text>
+          <path d="M235 28v50" stroke="#c3993d" stroke-width="2"/><path d="M237 30 268 39 237 48Z" fill="#6f1f18"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="command-card">
+      <div class="command-title"><h2>Command Overview</h2><div class="meta">personal utility</div></div>
+      <div class="stat-row">
+        <div class="stat"><span class="sicon">🕒</span><b>13:30</b><span>BT2 UTC</span></div>
+        <div class="stat"><span class="sicon">↻</span><b>2 DAYS</b><span>BT2 cycle</span></div>
+        <div class="stat"><span class="sicon">📋</span><b>1 TAP</b><span>copy &amp; paste</span></div>
+      </div>
+    </div>
+
+    <details class="section"><summary><span class="left"><span class="icon">🐻</span>Bear Trap 2</span></summary><div class="section-body"><div class="quick-grid">
+      <div class="block"><div class="block-head"><strong>Attendance Check</strong><span class="tag">Copy</span></div><textarea id="bt2-attendance">🐻 BEAR TRAP 2 — ATTENDANCE 🐻
+
+BT2 starts at 13:30 UTC.
+
+Will you be there?
+
+1️⃣ Yes, I’ll be there
+2️⃣ No, I can’t join
+3️⃣ My troops suddenly developed bear allergies 🐻😂
+
+Please vote so we can prepare the Rally Lead waves in time. 😊</textarea><button class="copy" onclick="copyText('bt2-attendance')">COPY</button></div>
+      <div class="block"><div class="block-head"><strong>Rally Leaders / Waves</strong><span class="tag">Main</span></div><textarea id="bt2-waves">🐻 Bear Trap 2 – Rally Leaders 🐻
+
+Wave 1 — 30:00
+FaQu · JEVYII · Ziggy · Freyja · Cartus · LapuLapu
+
+Wave 2 — 28:45
+Erik · Miskief · Melyau · Leezare · Educabeca
+
+Wave 3 — 27:30
+Komar · MiRai · CaGi · Hermione Granger
+
+Wave 4 — 26:15
+Open for additional Rally Leads
+
+Please be ready on time and stay close to the trap.</textarea><button class="copy" onclick="copyText('bt2-waves')">COPY</button></div>
+      <div class="block"><div class="block-head"><strong>5–10 Min Reminder</strong><span class="tag">AC</span></div><textarea id="bt2-reminder">🐻 Bear Trap 2 starts soon — 13:30 UTC.
+
+Rally Leads: please be ready and stay close to the trap.
+Check your Wave and be ready before your start time. 😊</textarea><button class="copy" onclick="copyText('bt2-reminder')">COPY</button></div>
+      <div class="block"><div class="block-head"><strong>BT2 Ablauf</strong><span class="tag">Todo</span></div><textarea id="bt2-todo">BT2 — 13:30 UTC
+
+☐ Morning / previous evening: Attendance vote
+☐ 13:00 UTC: evaluate attendance
+☐ Build Wave 1–4 Rally Lead list
+☐ Post list in BT2 group + Alliance Chat
+☐ 13:20–13:25 UTC: repost in AC
+☐ Check missing Rally Leads / replacements
+☐ 13:30 UTC: BT2 start
+☐ After BT2: note absences / new Rally Leads</textarea><button class="copy" onclick="copyText('bt2-todo')">COPY</button></div>
+    </div></div></details>
+
+    <details class="section"><summary><span class="left"><span class="icon">💬</span>Alliance Chat</span></summary><div class="section-body"><div class="block"><textarea id="ac-msg">📢 NXS Update
+
+[Write message here]</textarea><button class="copy" onclick="copyText('ac-msg')">COPY</button></div></div></details>
+
+    <details class="section"><summary><span class="left"><span class="icon">🟣</span>Discord</span></summary><div class="section-body"><div class="block"><textarea id="discord-msg">📌 NXS Update
+
+[Write the longer Discord version here]
+
+— FaQu</textarea><button class="copy" onclick="copyText('discord-msg')">COPY</button></div></div></details>
+
+    <details class="section"><summary><span class="left"><span class="icon">🗺️</span>Outposts</span></summary><div class="section-body"><div class="block"><textarea id="outpost-msg">🗺️ OUTPOST UPDATE
+
+Alliance:
+Quadrant:
+Coordinates:
+Status:
+
+Provided by Nexus App</textarea><button class="copy" onclick="copyText('outpost-msg')">COPY</button></div></div></details>
+
+    <details class="section"><summary><span class="left"><span class="icon">⚔️</span>KvK / Transfer</span></summary><div class="section-body"><div class="quick-grid"><div class="block"><textarea id="kvk-msg">⚔️ KvK Update
+
+Status:
+Priority:
+Next action:</textarea><button class="copy" onclick="copyText('kvk-msg')">COPY</button></div><div class="block"><textarea id="transfer-msg">🔎 Transfer Scouting
+
+Player:
+Alliance:
+Power:
+TG Castle:
+Notes:</textarea><button class="copy" onclick="copyText('transfer-msg')">COPY</button></div></div></div></details>
+
+    <details class="section"><summary><span class="left"><span class="icon">✅</span>Today / To-do</span></summary><div class="section-body"><div class="block"><div id="todos"></div><div class="small-note">Saved only in this browser on this device.</div></div></div></details>
+
+    <div class="footer">R4 Quick Tool · separate from Nexus App 2.0</div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Copied ✓</div>
+<script>
+function copyText(id){
+  const el=document.getElementById(id);
+  navigator.clipboard.writeText(el.value).then(()=>{
+    localStorage.setItem(id,el.value);
+    const t=document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'),1100);
+  });
+}
+const ids=['bt2-attendance','bt2-waves','bt2-reminder','bt2-todo','ac-msg','discord-msg','outpost-msg','kvk-msg','transfer-msg'];
+ids.forEach(id=>{
+  const el=document.getElementById(id),saved=localStorage.getItem(id);
+  if(saved!==null)el.value=saved;
+  el.addEventListener('input',()=>localStorage.setItem(id,el.value));
+});
+const defaults=['BT2 / Rally Leads','Check Alliance Chat / Discord','Outpost tasks','KvK / Transfer open items','Nexus App data/update task'];
+const host=document.getElementById('todos');
+defaults.forEach((txt,i)=>{
+  const key='r4todo_'+i;
+  const saved=JSON.parse(localStorage.getItem(key)||'null')||{text:txt,done:false};
+  const row=document.createElement('div'); row.className='todo';
+  const cb=document.createElement('input'); cb.type='checkbox'; cb.checked=saved.done;
+  const inp=document.createElement('input'); inp.type='text'; inp.value=saved.text;
+  const save=()=>localStorage.setItem(key,JSON.stringify({text:inp.value,done:cb.checked}));
+  cb.onchange=save; inp.oninput=save; row.append(cb,inp); host.appendChild(row);
+});
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.getRegistrations().then(rs=>Promise.all(rs.map(r=>r.unregister()))).catch(()=>{});
+}
+</script>
+</body>
+</html>
