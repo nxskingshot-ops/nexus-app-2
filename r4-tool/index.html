@@ -26,7 +26,7 @@ h1{font-family:Georgia,'Times New Roman',serif;margin:5px 0 0;font-size:42px;lin
 .motto{font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c7d0d8;margin-top:8px;font-style:italic;white-space:nowrap}
 .crest{position:relative;z-index:2;width:112px;height:112px;filter:drop-shadow(0 8px 14px rgba(0,0,0,.4))}
 .crest svg{width:100%;height:100%;display:block}
-.hero-art{position:absolute;right:0;top:0;width:36%;height:100%;opacity:.95;pointer-events:none}
+.hero-art{position:absolute;right:0;top:0;width:42%;height:100%;opacity:.96;pointer-events:none}
 .hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#07131e 0%,rgba(7,19,30,.3) 35%,transparent 70%)}
 .hero-art svg{width:100%;height:100%;display:block}
 .content{padding:20px 22px 12px}
@@ -35,14 +35,15 @@ h1{font-family:Georgia,'Times New Roman',serif;margin:5px 0 0;font-size:42px;lin
 .command-title h2{margin:0;font-family:Georgia,'Times New Roman',serif;font-size:30px;color:#f6d777;line-height:1}
 .meta{font-size:14px;color:#99aab8}
 .stat-row{padding:17px 18px 18px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.stat{border:1px solid #315a74;border-radius:18px;padding:17px 10px;background:linear-gradient(180deg,#091927,#07131f);text-align:center;box-shadow:inset 0 1px rgba(255,255,255,.02)}
+.stat{border:1px solid #8b7137;border-radius:18px;padding:14px 8px 13px;background:linear-gradient(180deg,#091927,#07131f);text-align:center;box-shadow:inset 0 1px rgba(255,255,255,.02)}
+.stat .sicon{display:block;font-size:25px;line-height:1;margin-bottom:8px;filter:sepia(1) saturate(1.4)}
 .stat b{display:block;font-family:Georgia,'Times New Roman',serif;font-size:23px;color:#f4d375;line-height:1.05}
-.stat span{display:block;margin-top:8px;font-size:13px;color:#a3b1bd}
+.stat span{display:block;margin-top:7px;font-size:13px;color:#a3b1bd}
 .section{margin-bottom:18px;border:1px solid #2e5870;border-radius:22px;background:linear-gradient(180deg,#081825,#071520);overflow:hidden;box-shadow:0 8px 18px rgba(0,0,0,.12)}
 .section summary{list-style:none;padding:19px 24px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:800;font-size:22px;min-height:88px}
 .section summary::-webkit-details-marker{display:none}
 .section summary .left{display:flex;align-items:center;gap:16px}
-.section summary .icon{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;font-size:30px;background:linear-gradient(145deg,#17364c,#091a27);border:1px solid #2f617e;box-shadow:inset 0 1px rgba(255,255,255,.04)}
+.section summary .icon{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;font-size:31px;background:radial-gradient(circle at 35% 30%,#17364c,#081722 70%);border:2px solid #a88335;box-shadow:inset 0 0 0 2px rgba(255,218,112,.06),0 2px 8px rgba(0,0,0,.28)}
 .section summary:after{content:"＋";font-size:36px;line-height:1;color:#f1cd6e;font-weight:500}
 .section[open] summary:after{content:"−"}
 .section[open] summary{border-bottom:1px solid #1f4054}
@@ -64,7 +65,7 @@ textarea{width:100%;min-height:90px;max-height:220px;resize:vertical;border:1px 
 @media(max-width:560px){
   .hero-inner{min-height:126px;padding:14px 13px 13px 16px;grid-template-columns:84px 1fr;gap:13px}
   .crest{width:84px;height:84px}
-  .hero-art{width:33%}
+  .hero-art{width:39%}
   .eyebrow{font-size:10px;letter-spacing:.15em}
   h1{font-size:31px}
   .motto{font-size:12px;margin-top:6px}
@@ -101,18 +102,19 @@ textarea{width:100%;min-height:90px;max-height:220px;resize:vertical;border:1px 
   <div class="hero">
     <div class="hero-inner">
       <div class="crest" aria-label="NXS crest">
-        <svg viewBox="0 0 120 120" role="img">
+        <svg viewBox="0 0 140 140" role="img">
           <defs>
-            <linearGradient id="g1" x1="0" x2="1"><stop stop-color="#7b5412"/><stop offset=".45" stop-color="#ffd76b"/><stop offset="1" stop-color="#8b5e14"/></linearGradient>
-            <linearGradient id="g2" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#253747"/><stop offset="1" stop-color="#0a121a"/></linearGradient>
+            <linearGradient id="cg" x1="0" x2="1"><stop stop-color="#8e5a10"/><stop offset=".45" stop-color="#ffd976"/><stop offset="1" stop-color="#9a6413"/></linearGradient>
+            <linearGradient id="cs" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#1b2a36"/><stop offset="1" stop-color="#060b10"/></linearGradient>
           </defs>
-          <path d="M60 5 103 20 97 82 60 112 23 82 17 20Z" fill="#0a131c" stroke="url(#g1)" stroke-width="5"/>
-          <path d="M21 31 3 42l19 6M99 31l18 11-19 6M22 47 6 60l18 3M98 47l16 13-18 3" fill="none" stroke="url(#g1)" stroke-width="6" stroke-linecap="round"/>
-          <path d="M60 18c-14 0-25 9-28 23l8 5 3 35 17 15 17-15 3-35 8-5c-3-14-14-23-28-23Z" fill="url(#g1)"/>
-          <path d="M60 25 49 38v37l11 10 11-10V38Z" fill="url(#g2)"/>
-          <path d="M43 45 31 39l7 19 11 5V48Zm34 0 12-6-7 19-11 5V48Z" fill="#0b1117"/>
-          <path d="M60 14 54 24h12Z" fill="#ffd76b"/>
-          <text x="60" y="105" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="700" fill="#f2cf69">NXS</text>
+          <path d="M70 7 115 23 109 95 70 128 31 95 25 23Z" fill="#0a121a" stroke="url(#cg)" stroke-width="5"/>
+          <path d="M29 30 10 25 24 42 6 45 26 56 9 65 31 68M111 30l19-5-14 17 18 3-20 11 17 9-22 3" fill="none" stroke="url(#cg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M70 22c-20 0-34 15-35 37l11 5 3 32 21 17 21-17 3-32 11-5c-1-22-15-37-35-37Z" fill="url(#cg)"/>
+          <path d="M70 27 58 41v52l12 10 12-10V41Z" fill="url(#cs)"/>
+          <path d="M48 48 35 42l8 23 15 6V52Zm44 0 13-6-8 23-15 6V52Z" fill="#05090d"/>
+          <path d="M70 11 61 28h18Z" fill="#ffd976"/>
+          <path d="M70 13v18" stroke="#f9d670" stroke-width="4" stroke-linecap="round"/>
+          <text x="70" y="122" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#f2cf69">NXS</text>
         </svg>
       </div>
       <div class="hero-copy">
@@ -144,9 +146,9 @@ textarea{width:100%;min-height:90px;max-height:220px;resize:vertical;border:1px 
     <div class="command-card">
       <div class="command-title"><h2>Command Overview</h2><div class="meta">personal utility</div></div>
       <div class="stat-row">
-        <div class="stat"><b>13:30</b><span>BT2 UTC</span></div>
-        <div class="stat"><b>2 DAYS</b><span>BT2 cycle</span></div>
-        <div class="stat"><b>1 TAP</b><span>copy &amp; paste</span></div>
+        <div class="stat"><span class="sicon">🕒</span><b>13:30</b><span>BT2 UTC</span></div>
+        <div class="stat"><span class="sicon">↻</span><b>2 DAYS</b><span>BT2 cycle</span></div>
+        <div class="stat"><span class="sicon">📋</span><b>1 TAP</b><span>copy &amp; paste</span></div>
       </div>
     </div>
 
@@ -259,7 +261,7 @@ defaults.forEach((txt,i)=>{
   cb.onchange=save; inp.oninput=save; row.append(cb,inp); host.appendChild(row);
 });
 if('serviceWorker' in navigator){
-  window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js?v=4').catch(()=>{}));
+  window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js?v=5').catch(()=>{}));
 }
 </script>
 </body>
