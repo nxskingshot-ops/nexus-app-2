@@ -193,6 +193,24 @@ Check your Wave and be ready before your start time. 😊</textarea><button clas
 ☐ Check missing Rally Leads / replacements
 ☐ 13:30 UTC: BT2 start
 ☐ After BT2: note absences / new Rally Leads</textarea><button class="copy" onclick="copyText('bt2-todo')">COPY</button></div>
+      <div class="block"><div class="block-head"><strong>BT2 Quick Info</strong><span class="tag">AC</span></div><textarea id="bt2-quick-info">🐻 BT2 QUICK INFO
+
+• Only designated Rally Leaders start rallies
+• Final 6 min: EVERYONE starts rallies simultaneously
+• Joiner limit: 90k
+• 10k Infantry / 20k Cavalry / 60k Archers
+• T9+ only — promote lower tiers
+• Fill rallies in order, no skipping or waiting
+• Rally Leads: offensive Attack/Lethality hero in Slot 1</textarea><button class="copy" onclick="copyText('bt2-quick-info')">COPY</button></div>
+      <div class="block"><div class="block-head"><strong>BT2 Hero Rules</strong><span class="tag">AC</span></div><textarea id="bt2-hero-rules">🐻 HERO RULES
+
+Join with Chenko, Yeonwoo, Amadeus or Amane ONLY.
+
+If none of these are available, join with NO HERO.
+
+Only the 1st hero’s top-right skill from the first 4 joiners affects the rally. Do NOT use Diana, Jabel, Marlin or defensive heroes — they can replace important damage buffs.
+
+Please check your presets before BT2.</textarea><button class="copy" onclick="copyText('bt2-hero-rules')">COPY</button></div>
     </div></div></details>
 
     <details class="section"><summary><span class="left"><span class="icon">💬</span>Alliance Chat</span></summary><div class="section-body"><div class="block"><textarea id="ac-msg">📢 NXS Update
@@ -243,7 +261,7 @@ function copyText(id){
     setTimeout(()=>t.classList.remove('show'),1100);
   });
 }
-const ids=['bt2-attendance','bt2-waves','bt2-reminder','bt2-todo','ac-msg','discord-msg','outpost-msg','kvk-msg','transfer-msg'];
+const ids=['bt2-attendance','bt2-waves','bt2-reminder','bt2-todo','bt2-quick-info','bt2-hero-rules','ac-msg','discord-msg','outpost-msg','kvk-msg','transfer-msg'];
 ids.forEach(id=>{
   const el=document.getElementById(id),saved=localStorage.getItem(id);
   if(saved!==null)el.value=saved;
